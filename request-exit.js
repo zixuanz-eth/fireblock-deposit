@@ -24,7 +24,7 @@ const eip1193Provider = new FireblocksWeb3Provider({
 
     const numOfShares = ethers.utils.parseEther('0.01'); // 
 
-    // Invoke approve method
+    // Invoke transferShares to exit queue address method
     const tx = await vPool.transferShares(
         EXIT_QUEUE_ADDRESS,
         numOfShares,

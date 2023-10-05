@@ -19,12 +19,12 @@ const eip1193Provider = new FireblocksWeb3Provider({
 (async() => {
 
     const provider = new ethers.providers.Web3Provider(eip1193Provider);
-    const vExitQueue = new ethers.Contract(CONTRACT_ADDRESS, ABI, provider.getSigner());
+    const vExitQueue = new ethers.Contract(EXIT_QUEUE_ADDRESS, ABI, provider.getSigner());
 
     const ticketIDs = [1,2] // TBD
     const caskIDs = [3,4] // TBD
 
-    // Invoke approve method
+    // Invoke claim method
     const tx = await vExitQueue.claim(
         ticketIDs,
         caskIDs,

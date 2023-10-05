@@ -21,9 +21,9 @@ const eip1193Provider = new FireblocksWeb3Provider({
     const provider = new ethers.providers.Web3Provider(eip1193Provider);
     const vPool = new ethers.Contract(CONTRACT_ADDRESS, ABI, provider.getSigner());
 
-    const amount = ethers.utils.parseEther('0.01'); // For example, 0.1 ETH
+    const amount = ethers.utils.parseEther('0.01'); // For example, 0.01 ETH
 
-    // Invoke approve method
+    // Invoke deposit method
     const tx = await vPool.deposit({
         value: amount,
     }
