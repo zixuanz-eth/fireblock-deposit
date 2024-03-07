@@ -21,8 +21,8 @@ const eip1193Provider = new FireblocksWeb3Provider({
     const provider = new ethers.providers.Web3Provider(eip1193Provider);
     const vExitQueue = new ethers.Contract(EXIT_QUEUE_ADDRESS, ABI, provider.getSigner());
 
-    const ticketIDs = [744197536456092419594400366453277078454272] // TBD
-    const caskIDs = [114] // TBD
+    const ticketIDs = [744197536456092419594400366453277078454272] /
+    const caskIDs = [114] 
 
     // Invoke claim method
     const tx = await vExitQueue.claim(
