@@ -4,7 +4,7 @@ const ethers = require("ethers")
 // Import the vPool ABI
 const ABI = require("./ExitQueue.abi.json");
 
-// Goerli vExitQueue Contract Address
+// Mainnet vExitQueue Contract Address
 const EXIT_QUEUE_ADDRESS = "0x86358F7B33b599c484e0335B8Ee4f7f7f92d8b60"
 
 const eip1193Provider = new FireblocksWeb3Provider({
